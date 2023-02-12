@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "quickers",
+  "version": "${version}",
+  "name": "Quickers",
+  "description": "A simple mod that adds a gamerule to change the rate at which hoppers transfer items.",
+  "authors": [
+    "CallMeEcho"
+  ],
+  "license": "MIT",
+  "icon": "assets/quickers/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.callmeecho.quickers.Quickers"
+    ]
+  },
+  "mixins": [
+    "quickers.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.14",
+    "fabric-api": "*",
+    "minecraft": "~1.19.2",
+    "java": ">=17"
+  }
+}
