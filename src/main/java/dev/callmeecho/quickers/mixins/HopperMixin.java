@@ -24,7 +24,7 @@ public abstract class HopperMixin extends LootableContainerBlockEntity {
         if (cooldown > 0) {
             if (world != null) {
                 int value = world.getGameRules().getInt(Quickers.HOPPER_SPEED) - 8;
-                Quickers.LOGGER.debug(String.valueOf(value));
+                //Quickers.LOGGER.debug(String.valueOf(value));
                 this.transferCooldown = cooldown + value;
                 ci.cancel();
             }
